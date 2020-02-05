@@ -2,8 +2,10 @@
  
 ## Windows 10 Search Showing "Blank Box" Fix
 
-You need to open run box. Right click start button and hit RUN. Then type REGEDIT. Now navigate to: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search
-Make sure these are set to 0
+RUN -> REGEDIT
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search
+
 CortanaConsent = dword 0
 BingSearchEnabled = dword 0
 
