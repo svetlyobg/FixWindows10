@@ -2,6 +2,8 @@
  
 ## Windows 10 Search Showing "Blank Box" Fix
 
+![Image description](00.png)
+
 RUN -> REGEDIT
 
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search
