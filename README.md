@@ -30,7 +30,7 @@ Edit > Modify > Decimal. Type the new port number > OK. Restart the computer.
 
 1. Click Start, click Run, type Regedit, and then click OK.
 2. Locate and then click the following registry subkey:
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EventSystem\{26c409cc-ae86-11d1-b616-00805fc79216}\Subscriptions
+>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EventSystem\{26c409cc-ae86-11d1-b616-00805fc79216}\Subscriptions
 3. On the Edit menu, click Delete, and then click Yes to confirm that you want to delete the subkey.
 4. Exit Registry Editor.
 5. Click Start, click Run, type services.msc, and then click OK.
@@ -76,7 +76,8 @@ After that, do this, however, you may not be able to change it to "volsnap". Rem
 
 ### Step 2
 
-12. Navigate to: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\STORAGE\Volume
+12. Navigate to:
+>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\STORAGE\Volume
 13. For each key under 'Volume', checked for the value 'Service' and make sure it is set to volsnap. If 'Service' does not exist do the following:
  - Created a new String Value called: Service
  - Set the value to: volsnap
