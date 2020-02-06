@@ -107,8 +107,14 @@ Source - https://malwaretips.com/threads/error-0x81000203.63564/page-7
 1. Close outlook that is in use.
 2. The default location is:
 >C:\Users\%username%\AppData\Local\Microsoft\Outlook
+
+
 Move the OST-file or PST-file from its original location to its new location.
+
+
 3. Open Command prompt using Windows+R keys, Run as Administrator. Provide all the administrator credentials for your computer by selecting yes to allow the prompt.
 4. Type the following commands:
 >mklink “C:\Users\%username%\AppData\Local\Microsoft\Outlook\ datafile.ost” “D:\Documents\Outlook Files\ datafile.ost“
+
+
 Where, mklink is used to create symbolic link;
