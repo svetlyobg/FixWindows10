@@ -87,7 +87,9 @@ Finally, reboot to make it work. Without reboot, you still have the problem
 
 Source - https://malwaretips.com/threads/error-0x81000203.63564/page-7
 
-## Relocating OST Data Files
+## Relocating OST Data Files 1
+
+### Force Path
 
 1. Press the Windows + R button, type regedit, and then press Enter.
 2. Navigate through the following registry path:
@@ -97,3 +99,16 @@ Source - https://malwaretips.com/threads/error-0x81000203.63564/page-7
 5. Right-click the newly-created ForceOSTPath. Click the Modify option.
 6. Specify OST file path for saving in the Value box. Click the OK button.
 7. Exit the registry editor.
+
+## Relocating OST Data Files 2
+
+### Using Symbolic Links or Junction Points
+
+1. Close outlook that is in use.
+2. The default location is:
+>C:\Users\%username%\AppData\Local\Microsoft\Outlook
+Move the OST-file or PST-file from its original location to its new location.
+3. Open Command prompt using Windows+R keys, Run as Administrator. Provide all the administrator credentials for your computer by selecting yes to allow the prompt.
+4. Type the following commands:
+>mklink “C:\Users\%username%\AppData\Local\Microsoft\Outlook\ datafile.ost” “D:\Documents\Outlook Files\ datafile.ost“
+Where, mklink is used to create symbolic link;
