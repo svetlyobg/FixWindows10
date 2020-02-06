@@ -32,14 +32,14 @@ Edit > Modify > Decimal. Type the new port number > OK. Restart the computer.
 2. Locate and then click the following registry subkey:
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EventSystem\{26c409cc-ae86-11d1-b616-00805fc79216}\Subscriptions
 3. On the Edit menu, click Delete, and then click Yes to confirm that you want to delete the subkey.
-Exit Registry Editor.
-Click Start, click Run, type services.msc, and then click OK.
-Right-click the following services one at a time. For each service, click Restart:
-COM+ Event System
-COM+ System Application
-Microsoft Software Shadow Copy Provider
-Volume Shadow Copy
-Click Start, click Run, type cmd, and then click OK.
+4. Exit Registry Editor.
+5. Click Start, click Run, type services.msc, and then click OK.
+6. Right-click the following services one at a time. For each service, click Restart:
+ - COM+ Event System
+ - COM+ System Application
+ - Microsoft Software Shadow Copy Provider
+ - Volume Shadow Copy
+7. Click Start, click Run, type cmd, and then click OK.
 At the command prompt, type vssadmin list writers, and then press ENTER.
 If the VSS writers are now listed, close the Command Prompt window. You do not have to complete the remaining steps.
 
