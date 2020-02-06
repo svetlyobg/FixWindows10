@@ -85,3 +85,13 @@ Finally, reboot to make it work. Without reboot, you still have the problem
 
 
 Source - https://malwaretips.com/threads/error-0x81000203.63564/page-7
+
+## Relocating OST Data Files
+
+1. Press the Windows + R button, type regedit, and then press Enter.
+2. Navigate through the following registry path: ```HKEY_CURRENT_USER\Software\Microsoft\Office\version number\Outlook``` .
+3. Right-click the Outlook sub key, point to New, and then click the Expandable String Value option.
+4. Specify ForceOSTPath. Press the Enter key.
+5. Right-click the newly-created ForceOSTPath. Click the Modify option.
+6. Specify OST file path for saving in the Value box. Click the OK button.
+7. Exit the registry editor.
