@@ -118,3 +118,17 @@ Move the OST-file or PST-file from its original location to its new location.
 
 
 Where, mklink is used to create symbolic link;
+
+## Outlook 365 searches emails in server by default
+
+Key
+>HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\Search
+
+Name
+>DisableServerAssistedSearch
+
+Type
+>REG_DWORD
+
+Value
+>1
