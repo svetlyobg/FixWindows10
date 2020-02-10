@@ -132,3 +132,14 @@ Type
 
 Value
 >1
+
+## Outlook search .ost file instead of Exchange server
+
+creating 2 DWORD keys in
+>HKEY_CURRENT_USER\software\microsoft\office\16.0\outlook\search
+
+>DisableServerAssistedSearch
+
+>DisableServerAssistedSuggestions
+
+Set both keys to 1, restart Outlook and everything should work.Type a message
