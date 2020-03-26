@@ -156,8 +156,11 @@ Make a note of the OOF reply when testing the Outlook connection and open it
 
 Create the following key
 >HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Security
+
 >Value name: WinhttpAuth
+
 >Value type: REG_DWORD 32 bit
+
 >Value: 1 or 2
 
 Create the following keys under:
@@ -166,10 +169,17 @@ Create the following keys under:
 
 
 >PreferLocalXML					0
+
 >ExcludeHttpRedirect				0
+
 >ExcludeHttpsAutoDiscoverDomain	0
+
 >ExcludeHttpsRootDomain			1
+
 >ExcludeScpLookup				1
+
 >ExcludeSrvRecord				1
+
 >ExcludeLastKnownGoodURL(only applies to Outlook 2010 version 14.0.7140.5001 and later versions)
+
 >ExcludeExplicitO365Endpoint (only applies to Outlook 2016 version 16.0.6741.2017 and later versions)
