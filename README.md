@@ -143,3 +143,33 @@ creating 2 DWORD keys in
 >DisableServerAssistedSuggestions
 
 Set both keys to 1, restart Outlook and everything should work.Type a message
+
+## Fix Outlook Out of Office reply - Your Out of Office settings cannot be displayed, because the server is currently unavailable. Try again later
+
+copy and rename the folowing folder to Outlook.old
+
+>C:\Users\svetlozar\AppData\Local\Microsoft\Outlook
+
+Open Outlook and make sure that the exchange addin is enabled
+
+Make a note of the OOF reply when testing the Outlook connection and open it
+
+Create the following key
+>HKEY_CURRENT_USER\Software\Microsoft\Office\<version>\Outlook\Security
+>Value name: WinhttpAuth
+>Value type: REG_DWORD 32 bit
+>Value: 1 or 2
+
+Create the following keys under:
+
+>HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover
+
+
+>PreferLocalXML					0
+>ExcludeHttpRedirect				0
+>ExcludeHttpsAutoDiscoverDomain	0
+>ExcludeHttpsRootDomain			1
+>ExcludeScpLookup				1
+>ExcludeSrvRecord				1
+>ExcludeLastKnownGoodURL(only applies to Outlook 2010 version 14.0.7140.5001 and later versions)
+>ExcludeExplicitO365Endpoint (only applies to Outlook 2016 version 16.0.6741.2017 and later versions)
