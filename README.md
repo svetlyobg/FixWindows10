@@ -214,3 +214,6 @@ Create the following keys under:
 >Let me set a different input method for each app window
 
 ![Image description](05Letmesetadifferentinputmethodforeachappwindow.png)
+
+
+Source - https://superuser.com/questions/772698/how-to-set-a-different-input-method-for-each-app-window
