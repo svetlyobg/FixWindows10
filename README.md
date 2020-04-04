@@ -188,4 +188,4 @@ Create the following keys under:
 
 >Settings
 
-![Image description](00 Settings.png)
+![Image description](00Settings.png)
