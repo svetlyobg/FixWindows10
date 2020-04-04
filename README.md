@@ -189,3 +189,18 @@ Create the following keys under:
 >Settings
 
 ![Image description](00Settings.png)
+
+>Time&Language
+![Image description](01Time&Language.png)
+
+>Language
+![Image description](02Language.png)
+
+>Related Settings: Spelling, typing, & keyboard settings
+![Image description](03RelatedSettings-Spelling,typing,&keyboardsettings.png)
+
+>More keyboard settings: Advanced keyboard settings
+![Image description](04Morekeyboardsettings-Advancedkeyboardsettings.png)
+
+>Let me set a different input method for each app window
+![Image description](05Letmesetadifferentinputmethodforeachappwindow.png)
