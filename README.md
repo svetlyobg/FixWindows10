@@ -183,3 +183,9 @@ Create the following keys under:
 >ExcludeLastKnownGoodURL(only applies to Outlook 2010 version 14.0.7140.5001 and later versions)
 
 >ExcludeExplicitO365Endpoint (only applies to Outlook 2016 version 16.0.6741.2017 and later versions)
+
+## How to set a different input method for each app window
+
+>Settings
+
+![Image description](00 Settings.png)
