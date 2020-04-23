@@ -217,3 +217,8 @@ Create the following keys under:
 
 
 Source - https://superuser.com/questions/772698/how-to-set-a-different-input-method-for-each-app-window
+
+## Blue Screen Viewer
+https://www.nirsoft.net/utils/blue_screen_view.html 
+
+Download: https://www.nirsoft.net/utils/bluescreenview.zip
