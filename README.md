@@ -222,3 +222,11 @@ Source - https://superuser.com/questions/772698/how-to-set-a-different-input-met
 https://www.nirsoft.net/utils/blue_screen_view.html 
 
 Download: https://www.nirsoft.net/utils/bluescreenview.zip
+
+## Something Went Wrong and your search couldn't be completed (Outlook 2020)
+
+You shuld create the following 32-bit DWORD **DisableServerAssistedSearch** with value **1** in regedit:
+
+>Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Office\16.0\Outlook\Search
+
+![Image description](00FixOutlokSearch2020.png)
