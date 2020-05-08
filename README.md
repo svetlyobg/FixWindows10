@@ -235,13 +235,18 @@ You shuld create the following 32-bit DWORD **DisableServerAssistedSearch** with
 
 1. Boot to the BIOS
 2. Disable Secure boot
+
 ![Disable Secure boot](01UEFIboot.jpg)
 
 3. Disable Fast boot (if available)
-![Disable Fast boot](03UEFIboot.jpg)
 
+![Disable Fast boot](03UEFIboot.jpg)
+<br>
 4. Change UEFI to Legacy Boot
+
 ![LEGACY BOOT](00UEFIboot.jpg)
+<br>
 
 5. Navigate to the EXIT menu and select Yes to continue to disable the OS Optimized Defaults
+
 ![OS Optimized Defaults](02UEFIboot.jpg)
