@@ -1,5 +1,5 @@
 # FixWindows10
- 
+
 ## Windows 10 Search Showing "Blank Box" Fix
 
 ![Image description](00.png)
@@ -219,7 +219,7 @@ Create the following keys under:
 Source - https://superuser.com/questions/772698/how-to-set-a-different-input-method-for-each-app-window
 
 ## Blue Screen Viewer
-https://www.nirsoft.net/utils/blue_screen_view.html 
+https://www.nirsoft.net/utils/blue_screen_view.html
 
 Download: https://www.nirsoft.net/utils/bluescreenview.zip
 
@@ -231,3 +231,14 @@ You shuld create the following 32-bit DWORD **DisableServerAssistedSearch** with
 
 >Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Office\16.0\Outlook\Search
 
+## How to Enable Boot from CD, DVD and USB boot Option with UEFI Boot Mode Enabled for Windows 8, 8.1 and 10
+
+1. Boot to the BIOS
+2. Disable Secure boot
+![Disable Secure boot](01UEFIboot.jpg)
+3. Disable Fast boot (if available)
+![Disable Fast boot](03UEFIboot.jpg)
+4. Change UEFI to Legacy Boot
+![LEGACY BOOT](00UEFIboot.jpg)
+5. Navigate to the EXIT menu and select Yes to continue to disable the OS Optimized Defaults
+![OS Optimized Defaults](02UEFIboot.jpg)
