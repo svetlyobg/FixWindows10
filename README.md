@@ -233,6 +233,10 @@ You shuld create the following 32-bit DWORD **DisableServerAssistedSearch** with
 
 >Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Office\16.0\Outlook\Search
 
+If the issue still persists, please add the same DWORD under the following key:
+
+>Computer\HKEY_CURRENT_USER\software\microsoft\office\16.0\outlook\search
+
 ## How to Enable Boot from CD, DVD and USB boot Option with UEFI Boot Mode Enabled for Windows 8, 8.1 and 10
 
 1. Boot to the BIOS
