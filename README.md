@@ -254,3 +254,8 @@ If the issue still persists, please add the same DWORD under the following key:
 5. Navigate to the EXIT menu and select Yes to continue to disable the OS Optimized Defaults
 
 ![OS Optimized Defaults](02UEFIboot.jpg)
+
+## Office 365 won't log in without EnableADAL = 0
+
+HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Identity, create a DWORD value named EnableADAL and set it to zero.
+Under the same registry key, create a DWORD value named DisableADALatopWAMOverride and set it to 1
