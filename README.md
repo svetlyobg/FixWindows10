@@ -116,8 +116,10 @@ Move the OST-file or PST-file from its original location to its new location.
 4. Type the following commands:
 >mklink “C:\Users\%username%\AppData\Local\Microsoft\Outlook\ datafile.ost” “D:\Documents\Outlook Files\ datafile.ost“
 
-
 Where, mklink is used to create symbolic link;
+
+The PowerShell command is:
+>New-Item -ItemType SymbolicLink -Path "C:\Users\%username%\AppData\Local\Microsoft\Outlook\outlookcom.ost" -Value "D:\Documents\Outlook Files\outlookcom.ost"
 
 ## Outlook 365 searches emails in server by default
 
