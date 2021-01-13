@@ -261,3 +261,18 @@ If the issue still persists, please add the same DWORD under the following key:
 
 HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Identity, create a DWORD value named EnableADAL and set it to zero.
 Under the same registry key, create a DWORD value named DisableADALatopWAMOverride and set it to 1
+
+## Enable GPedit in Windows 10 Home
+
+run this in cmd.exe as an admin:
+
+> pushd "%~dp0" 
+
+> dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt 
+
+> dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt 
+
+> for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i" 
+
+> pause
+
