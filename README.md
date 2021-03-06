@@ -276,3 +276,8 @@ run this in cmd.exe as an admin:
 
 > pause
 
+## Multiple connections to a server or shared resource by the same user, using more than one user name, are not allowed
+
+> net use \\<resource> /delete
+
+> Get-Service workstation | Restart-Service -Force
