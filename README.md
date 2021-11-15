@@ -106,7 +106,7 @@ Source - https://malwaretips.com/threads/error-0x81000203.63564/page-7
 
 1. Close outlook that is in use.
 2. The default location is:
->C:\Users\%username%\AppData\Local\Microsoft\Outlook
+>%localappdata%\Microsoft\Outlook
 
 
 Move the OST-file or PST-file from its original location to its new location.
