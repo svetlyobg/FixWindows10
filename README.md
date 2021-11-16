@@ -186,6 +186,38 @@ Create the following keys under:
 
 >ExcludeExplicitO365Endpoint (only applies to Outlook 2016 version 16.0.6741.2017 and later versions)
 
+## Show total numbers of Emails in all folders in Outlook
+
+1. Press Alt + F11 keys to open the Microsoft Visual Basic
+2. Click Insert > Module, and then paste the VBA code below
+
+```vbs
+Sub ShowTotalInAllFolders()
+Dim oStore As Outlook.Store
+Dim oRoot As Outlook.Folder
+ 
+On Error Resume Next
+ 
+For Each oStore In Application.Session.Stores
+Set oRoot = oStore.GetRootFolder
+ShowTotalInFolders oRoot
+Next
+End Sub
+ 
+Private Sub ShowTotalInFolders(ByVal Root As Outlook.Folder)
+Dim oFolder As Outlook.Folder
+ 
+On Error Resume Next
+ 
+If Root.Folders.Count > 0 Then
+For Each oFolder In Root.Folders
+oFolder.ShowItemCount = olShowTotalItemCount
+ShowTotalInFolders oFolder
+Next
+End If
+End Sub
+```
+
 ## How to set a different input method for each app window
 
 >Settings
