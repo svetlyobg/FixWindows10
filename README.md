@@ -324,3 +324,12 @@ del hyper-v.txt
 Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL
 pause
 ```
+
+## Resolve MS Office TPM Error
+
+![Image description](MSTeams-TPM.png)
+
+```bat
+reg add "HKCU\Software\Microsoft\Office\16.0\Common\Identity" /v EnableADAL /t REG_DWORD /d 0 /f
+reg add "HKCU\Software\Microsoft\Office\16.0\Common\Identity" /v DisableADALatopWAMOverride /t REG_DWORD /d 1 /f
+```
