@@ -337,3 +337,20 @@ reg add "HKCU\Software\Microsoft\Office\16.0\Common\Identity" /v DisableADALatop
 ## Fix problems that block programs from being installed or removed
 
 [Microsoft Troubleshooter](https://download.microsoft.com/download/7/E/9/7E9188C0-2511-4B01-8B4E-0A641EC2F600/MicrosoftProgram_Install_and_Uninstall.meta.diagcab)
+
+## Empty TMP folder and check Run and RunOnce registries
+
+```powershell
+$tempfolders = @( "C:\Windows\Temp", "C:\Windows\Prefetch", "C:\Users\Svetlozar\Appdata\Local\Temp\" )
+gci $tempfolders
+Remove-Item $tempfolders -force -recurse 
+
+#$regs = @( "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run", "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce", "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run", "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce", "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot", "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\AlternateShells\AvailableShells", "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Group Policy\Scripts\Logon")
+reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"
+reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce"
+reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run"
+reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce"
+reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot"
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\AlternateShells\AvailableShells"
+reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Group Policy\Scripts\Logon"
+```
