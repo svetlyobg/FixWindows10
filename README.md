@@ -341,7 +341,7 @@ reg add "HKCU\Software\Microsoft\Office\16.0\Common\Identity" /v DisableADALatop
 ## Empty TMP folder and check Run and RunOnce registries
 
 ```powershell
-$tempfolders = @( "C:\Windows\Temp", "C:\Windows\Prefetch", "C:\Users\Svetlozar\Appdata\Local\Temp\" )
+$tempfolders = @( "C:\Windows\Temp", "C:\Windows\Prefetch", "C:\Users\$env:UserName\Appdata\Local\Temp\" )
 gci $tempfolders
 Remove-Item $tempfolders -force -recurse 
 
