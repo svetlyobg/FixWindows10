@@ -354,3 +354,7 @@ reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot"
 reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\AlternateShells\AvailableShells"
 reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Group Policy\Scripts\Logon"
 ```
+
+## Rename the User Profile Folder
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
