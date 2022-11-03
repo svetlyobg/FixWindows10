@@ -87,6 +87,12 @@ Finally, reboot to make it work. Without reboot, you still have the problem
 
 Source - https://malwaretips.com/threads/error-0x81000203.63564/page-7
 
+## Fix Veeam Service Issue
+
+![Veeam Service Issue](/VeeamServiceIssue.png)
+
+Fix the sector storage size - https://learn.microsoft.com/en-us/troubleshoot/sql/admin/troubleshoot-os-4kb-disk-sector-size
+
 ## Relocating OST Data Files 1
 
 ### Force Path
