@@ -303,8 +303,7 @@ Under the same registry key, create a DWORD value named DisableADALatopWAMOverri
 ```bat
 reg add "HKCU\Software\Microsoft\Office\16.0\Common\Identity" /v EnableADAL /t REG_DWORD /d 0 /f
 reg add "HKCU\Software\Microsoft\Office\16.0\Common\Identity" /v DisableADALatopWAMOverride /t REG_DWORD /d 1 /f
-
-``
+```
 
 ## Enable GPedit in Windows 10 Home
 
