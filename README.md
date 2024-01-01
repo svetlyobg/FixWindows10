@@ -369,3 +369,10 @@ reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Group Pol
 ## Rename the User Profile Folder
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+
+## Skip Connect You to Network Windows 11 Setup
+
+![bypass network connection requirements](Windows11NetworkSkip.png)
+
+To skip the Let's Connect You to Network screen on Windows 11 Setup, press `Shift + F10` and kill the Network Connection Flow process, or create a local user account via Command Prompt. You can aslo type `OOBE\BYPASSNRO` to bypass network connection requirements.
+
